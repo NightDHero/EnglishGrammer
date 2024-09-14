@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
+}
+
+h1 {
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+    background-color: #c5ddf7;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-section {
+    margin: 5% auto;
+    padding: 20px;
+
+    width: 80%;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tenses-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quiz-topic {
+    margin-bottom: 5px;
+    padding: 10px;
+    
+    background-color: #c8e3ff;
+    
+    transition: background-color 0.1s ease-in-out; 
+    
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.quiz-topic:hover,
+.quiz-topic:focus {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #b1d0f5;
+}
+
+.select-all-quiz-topics-button {
+    display: inline-block;
+
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
+    border-radius: 5px;
+    background-color: #4d94ff;
+    color: black;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #4d94ff;
+    color: #fff;
+}
+
+.selected:hover {
+    background-color: #448fff;
+}
+
+#start-quiz,
+#return-home {
+    display: block;
+
+    padding: 10px 20px;
+
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    background-color: #2b7efa;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#start-quiz {
+    margin: 10px auto;
+}
+
+#return-home {
+    margin: 0 auto;
+}
+
+#start-quiz:hover,
+#start-quiz:focus {
+    background-color: #448fff;
+}
+
+#start-quiz:active,
+#return-home:active,
+.select-all-quiz-topics-button:active {
+    transform: translateY(1px);
+}
+
+#start-quiz:disabled {
+    background-color: #b1d0f5;
+    color: #000;
+    cursor: not-allowed;
+}
+
+#start-quiz:disabled:hover {
+    background-color: #b1d0f5;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pre-quiz.css">
+    <title>Quiz Interface</title>
+</head>
+<body>
+
+    <header id="header">
+        <button id="start-quiz-button">Start Quiz</button>
+        <div id="stopwatch">00:00:00</div>
+    </header>
+
+    <section id="starting-container">
+    <div>
+        <h2>Questions per Topic:</h2>
+        <div id="question-quantity-container">
+            <button id="3-questions" data-quantity="3" class="question-quantity-option">3</button>
+            <button id="5-questions" data-quantity="5" class="question-quantity-option">5</button>
+            <button id="10-questions" data-quantity="10" class="question-quantity-option">10</button>
+        </div>
+    </div>
+        
+        <div class="selected-topics-container">
+            <h2>Selected Topics</h2>
+            <ul id="selected-topics-list"></ul>
+        </div>
+    </section>
+
+    <script type="module" src="pre-quiz.js"></script>
+</body>
+</html
